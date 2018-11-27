@@ -1,0 +1,27 @@
+#ifndef PROYECTO_H_
+#define PROYECTO_H_
+
+/*
+Aspectos a considerar: El alumno que se añade se pasa como parametro a la funcion. Debes incrementar el numero
+total de alumnos, y que no pase de 150 y añadir el alumno a la lista. Devolver true o false dependiendo del 
+diagrama de caso de uso
+*/
+bool insertarAlumno(Alumno a);
+
+/*
+Aspectos a considerar: Le pasas el profesor como parametro. Debes guardar el profesor en el fichero de credenciales
+Devolver true o false dependiendo del diagrama de caso de uso
+*/
+bool AnadirProfesor(Profesor p);
+
+/*
+El campo clave se pasa como parámetro y se devuelve el alumno que satisfaga la busqueda. 
+Si opcion es 1, buscas por DNI. Si opcion es 2 buscas por apellidos. Si buscas por apellidos, en la busqueda
+tienes que concatenar los apellidos. Si hay dos alumnos con apellidos repetidos, 
+*/
+Alumno buscarAlumno(string cadena, int opcion);
+
+
+
+
+#endif
